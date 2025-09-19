@@ -59,12 +59,12 @@ select::-ms-expand{ display:none; }
 /* .sec_top { padding-top: 80px; } */
 
 /* @ header @ */
-header { padding: 25px 0; width: 100%; position: fixed; top: 0; left: 0; z-index: 101; background: #777; }
+header { padding: 25px 0; width: 100%; position: fixed; top: 0; left: 0; z-index: 101; background: var(--white-color); }
 header .inner { display: flex; justify-content: space-between; }
 header h1 {  }
 header nav {  }
 header nav ul { display: flex; align-items: center; gap: 40px;}
-header nav ul li { font-size: 16px; color: var(--white-color); }
+header nav ul li { font-size: 16px; color: var(--black-color2); }
 header nav ul li a {  }
 
 /* @ main @ */
@@ -75,7 +75,7 @@ header nav ul li a {  }
 .s_title_sub2 { font-size: 16px; font-weight: 700; color: #7f7f7f; }
 
 /* sec1 */
-section.sec1 { background: palegoldenrod; height: calc(100vh + 80px); }
+section.sec1 { background: #868686; height: calc(100vh + 80px); }
 
 /* sec2 */
 section.sec2 { background: #000; color: var(--white-color); }
@@ -140,25 +140,84 @@ section.sec4 .video_div .video_ul .video_list .t1 { margin-top: 15px; font-weigh
 .video_btn_div .videoBtn { padding: 5px 20px; background: var(--navy-color); border-radius: 100px; border: none; color: var(--white-color); }
 
 /* sec5 */
-section.sec5 { padding: 150px 0; background: linear-gradient(180deg, rgba(134, 134, 134, 0.00) 50%, #868686 100%), #0F0F0F; color: var(--white-color ); position: relative; }
+section.sec5 { padding: 150px 0; background: linear-gradient(180deg, rgba(134, 134, 134, 0.00) 50%, #868686 100%), #0F0F0F; color: var(--white-color ); position: relative; overflow: hidden; }
 section.sec5 .sec5_img { position: absolute; bottom: 90px; right: 50px; }
 section.sec5 .sec5_slide { margin-top: 30px; }
 section.sec5 .sec5_slide .direcBox {  display: flex; align-items: center; justify-content: center; background: #000; height: 50px; }
 
 /* sec6 */
-section.sec6 {  }
+section.sec6 { padding: 200px 0; background: url('../img/main/sec6/bg.jpg') no-repeat center / cover; color: var(--white-color); }
+section.sec6 .s_titleBox { text-align: left; margin-bottom: 25px; }
+
+section.sec6 .con { }
+section.sec6 .con .mapBox { max-width: 680px; width: 100%; height: 582px; border-radius: 10px; overflow: hidden; }
 
 /* sec7 */
-section.sec7 { background: url('../img/main/sec7/bg.jpg') no-repeat center / cover; color: var(--white-color);}
-section.sec7 .video_btn_div {  }
-
-
-/* @ footer @ */
-footer { padding: 50px 0; background: var(--black-color2); }
-footer .inner { display: flex; align-items: center; justify-content: space-between; }
-footer h1 { }
-footer .copyright { font-size: 16px; font-weight: 700; color: #a7a7a7; }
+section.sec7 { padding: 150px 0; background: var(--navy-color); color: var(--white-color); text-align: center; }
+section.sec7 img {  }
+section.sec7 .stick { width: 80px; height: 4px; background:  var(--white-color); display: block; margin: 40px auto; }
+section.sec7 b { font-size: 24px; }
 
 @media screen and (max-width: 1250px) {
-    
+    section.sec7 img { width: 380px; }
+    section.sec7 b { font-size: 20px; }
+    section.sec7 .stick { width: 60px; height: 2px; }
 }
+
+@media screen and (max-width: 650px) {
+    section.sec7 { padding: 16vw 0;}
+    section.sec7 img { width: 300px; }
+    section.sec7 b { font-size: 18px; }
+    section.sec7 .stick { margin: 20px auto; }
+}
+@media screen and (max-width: 500px) {
+    section.sec7 img { width: 260px; }
+    section.sec7 b { font-size: 16px; }
+    section.sec7 .stick { margin: 20px auto; }
+}
+
+/* @ footer @ */
+footer { padding: 50px 0; background: var(--black-color2); color: var(--white-color); }
+footer .inner { display: flex; flex-direction: column; }
+footer .box1 { display: flex; justify-content: space-between; align-items: center; }
+footer .box1 b { font-size: 18px; color: #7f7f7f; }
+
+footer .box2 {  }
+footer .box2 ul { margin: 20px 0 30px; display: flex; }
+footer .box2 ul li { color: #A7A7A7; }
+footer .box2 ul li:not(:last-child)::after { content: ''; width: 2px; height: 15px; background: #A7A7A7; display: inline-block; margin: 0 10px; position: relative; top: 2px; }
+footer .box2 .copyright { font-size: 14px; font-weight: 400; color: #A7A7A7; }
+
+@media screen and (max-width: 1250px) {
+    footer h1 { width: 200px; }
+    footer .box1 b { font-size: 16px; }
+    footer .box2 ul li { font-size: 14px; }
+    footer .box2 ul li:not(:last-child)::after { height: 12px; }
+    footer .box2 .copyright { font-size: 12px; }
+}
+@media screen and (max-width: 1000px) {
+    footer .box2 ul { flex-direction: column; gap: 10px; }
+    footer .box2 ul li:not(:last-child)::after { display: none; }
+}
+@media screen and (max-width: 500px) {
+    footer h1 { width: 180px; }
+    footer .box1 { flex-direction: column; align-items: flex-start; gap: 20px; }
+}
+
+/* float_menu */
+.float_menu { position: fixed; bottom: 100px; right: 80px; z-index: 99; }
+.float_menu .box { }
+.float_menu ul { position: fixed; right: 80px; bottom: 100px; overflow: hidden; padding: 20px 10px; background: var(--white-color); border-radius: 100px; display: flex; align-items: center; justify-content: center; flex-direction: column;  display: flex; flex-direction: column; align-items: center; gap: 15px; padding-bottom: 90px; transition: max-height .5s , padding .5s, bottom .5s; max-height: 400px; }
+.float_menu.hide ul{ padding: 0 10px; max-height: 0px; bottom: 140px; }
+.float_menu ul li {  }
+.float_menu ul li.stick { width: 62px; height: 1px; background: #d9d9d9; display: block; }
+.float_menu ul li a { display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.float_menu ul li a img {  }
+.float_menu ul li a b { font-size: 14px; color: var(--black-color2); }
+.float_menu .btnBox { right: 80px; border-radius: 50%; position: fixed; width: 82px; bottom: 100px; width: 82px; height: 82px; background: var(--white-color); cursor: pointer;  display: flex; align-items: center; justify-content: center; }
+/* .float_menu .f_click.on {  display: block; }
+.float_menu .f_click {  display: none; } */
+.float_menu.hide .box{ height: 82px; }
+.float_menu .box.on { width: 80px; height: 80px; }
+.float_menu .btnBox img{ transition: transform .5s; }
+.float_menu.hide .btnBox img{ transform: rotate(135deg); }  

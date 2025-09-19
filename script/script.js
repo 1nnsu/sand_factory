@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function(e){
     aboutSlide();
     reviewSlide();
     spaceSlide();
+    floatingMenu();
 })
 // sec2
 const aboutSlide = () => {
@@ -15,8 +16,8 @@ const aboutSlide = () => {
         speed: 3000,
         autoplay: {
         delay: 0,
-        disableOnInteraction: false,
-        }
+    },
+        waitForTransition: false, // 클릭 후에도 즉시 이어서 이동
     });
 }
 // sec4
@@ -48,8 +49,16 @@ const spaceSlide = () => {
         navigation: {
         nextEl: ".sec5_next",
         prevEl: ".sec5_prev",
-      },
+        },
+        loopedSlides: 3
     });
 }
 
 
+const floatingMenu = () => {
+    $('.float_menu .btnBox').click(function(){
+        $('.float_menu').toggleClass('hide');
+        // $('.float_menu ul').stop().slideToggle();
+        // $('.f_click').toggleClass('on');
+    })
+}
