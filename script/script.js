@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function(e){
     reviewSlide();
     spaceSlide();
     floatingMenu();
+    videoSlide();
+    edu_1_click();
 })
 // sec2
 const aboutSlide = () => {
@@ -34,6 +36,19 @@ const reviewSlide = () => {
         // }
     });
 }
+const videoSlide = () => {
+    var swiper = new Swiper(".videoSwiper", {
+        loop:true,
+        spaceBetween: 30,
+        slidesPerView: 3.3,
+        centeredSlides: true,
+        speed: 3000,
+        autoplay: {
+        delay: 0,
+        disableOnInteraction: false
+        }
+    });
+}
 // sec5
 const spaceSlide = () => {
     var swiper = new Swiper(".spaceSwiper", {
@@ -60,5 +75,13 @@ const floatingMenu = () => {
         $('.float_menu').toggleClass('hide');
         // $('.float_menu ul').stop().slideToggle();
         // $('.f_click').toggleClass('on');
+    })
+}
+// sec6
+
+const edu_1_click = () => {
+    $('.edu_1 li').click(function(){
+        $('.edu_1 li').removeClass('on');
+        $(this).addClass('on');
     })
 }
