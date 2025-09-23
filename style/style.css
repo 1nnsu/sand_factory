@@ -74,10 +74,28 @@ header nav ul li a {  }
 .s_title_sub { font-size: 36px; font-weight: 700; }
 .s_title_sub2 { font-size: 16px; font-weight: 700; color: #7f7f7f; }
 
+@media screen and (max-width: 1250px) {
+    .s_titleBox .leaf { width: 32px; }
+    .s_title { font-size: 16px; }
+    .s_title_sub { font-size: 28px; }
+}
+@media screen and (max-width: 650px) {
+    .s_titleBox { gap: 20px; }
+    .s_titleBox .leaf { width: 24px; }
+    .s_title { font-size: 16px; }
+    .s_title_sub { font-size: 24px; }
+}
+@media screen and (max-width: 500px) {
+    .s_title { font-size: 3vw; }
+    .s_titleBox .leaf { width: 20px; }
+    .s_title_sub { font-size: 5vw; }
+}
+
+
 /* sec1 */
 section.sec1 { background: url('../img/main/sec1/bg.jpg') no-repeat center / cover; height: calc(100vh + 80px); }
-section.sec1 .inner { width: 100%; height: 100%; position: relative; }
-section.sec1 .box { position: absolute; bottom: 200px; left: 360px; }
+section.sec1 .inner { }
+section.sec1 .box { padding-top: 35%; }
 section.sec1 .sec1_logo {  }
 section.sec1 .t1 { font-size: 32px; font-weight: 700; color: var(--white-color); margin-top: 50px; }
 
@@ -98,8 +116,25 @@ section.sec2 .aboutSwiper .swiper-slide { }
 section.sec2 .aboutSwiper .slide .slide_img {  }
 section.sec2 .banner2 .t1 { padding: 100px 0; font-size: 28px; font-weight: 700; text-align: center; color: var(--white-color); background: url('../img/main/sec2/bg2.jpg') no-repeat center / cover; }
 
+@media screen and (max-width: 1250px) {
+    section.sec2 .banner1 { padding: 100px 0; }
+    section.sec2 .banner1 .t1 { font-size: 32px; }
+    section.sec2 .banner1 .t2 { font-size: 18px; }
+
+    section.sec2 .about .about_logo { padding: 0 7vw; }
+}
+
+@media screen and (max-width: 650px) {
+    section.sec2 .about .s_titleBox { gap: 20px; }
+}
+
+@media screen and (max-width: 500px) {
+    section.sec2 .banner1 .t1 { font-size: 6vw; }
+    section.sec2 .banner1 .t2 { font-size: 3.5vw; }
+}
+
 /* sec3 */
-section.sec3 { background: url('../img/main/sec3/bg.jpg') no-repeat center / cover; text-align: center; }
+section.sec3 { background: #e6e6e6; text-align: center; }
 section.sec3 > .inner { padding: 80px 10px; }
 section.sec3 .sec3_img_pc { margin: 30px 0 80px; }
 section.sec3 .pc {  }
@@ -163,8 +198,8 @@ section.sec5 .sec5_slide .direcBox { width: 400px; display: flex; align-items: c
 section.sec6 { padding: 200px 0; background: url('../img/main/sec6/bg.jpg') no-repeat center / cover; color: var(--white-color); }
 section.sec6 .s_titleBox { text-align: left; margin-bottom: 25px; }
 
-section.sec6 .con { display: flex; gap: 20px; }
-section.sec6 .con .mapBox { max-width: 680px; width: 100%; height: 582px; border-radius: 10px; overflow: hidden; }
+section.sec6 .con { display: flex;  justify-content: space-between;}
+section.sec6 .con .mapBox { max-width: 680px; width: 100%;  border-radius: 10px; overflow: hidden; }
 
 section.sec6 .con .formBox { padding: 50px 30px 30px; background: var(--white-color); border-radius: 10px; }
 section.sec6 .con .formBox .formList {  }
@@ -184,6 +219,29 @@ section.sec6 .edu .edu_1 li.on { color: var(--white-color); background: var(--bl
 
 section.sec6 .circleDiv { padding: 20px 0; border-bottom: 1px solid #E4E4E4; color: var(--black-color1); display: flex; gap: 20px; }
 section.sec6 .circleDiv label { display: flex; gap: 8px; }
+
+@media screen and (max-width: 1250px) {
+    section.sec6 .s_title_sub { text-align: center; }
+    section.sec6 .con {  flex-direction: column; gap: 50px; }
+    section.sec6 .con .mapBox { max-width: 800px; height: 500px; margin: 0 auto; }
+    section.sec6 .con .formBox { max-width: 800px; width: 100%; margin: 0 auto; }
+}
+@media screen and (max-width: 800px) {
+    section.sec6 .con .mapBox { height: 60vw; }
+}
+@media screen and (max-width: 650px) {
+    section.sec6 { padding: 18vw 0; }
+    section.sec6 .con .formBox .sec6_logo { width: 130px; margin: 0 auto 30px; }
+}
+@media screen and (max-width: 500px) {
+    section.sec6 .con .formBox { padding: 30px 20px; }
+    section.sec6 .con .formBox .sec6_logo { width: 100px; }
+    section.sec6 .edu .t1 { font-size: 14px; }
+    section.sec6 .circleDiv { display: flex; flex-wrap: wrap; }
+    section.sec6 .cricleList { font-size: 14px; }
+    section.sec6 .con .formBox .formBtn { width: 100%; }
+    section.sec6 .con { gap: 25px; }
+}
 
 /* sec7 */
 section.sec7 { padding: 150px 0; background: var(--navy-color); color: var(--white-color); text-align: center; }

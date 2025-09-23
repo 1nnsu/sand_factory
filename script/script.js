@@ -81,7 +81,7 @@ const floatingMenu = () => {
 
 const edu_1_click = () => {
     $('.edu_1 li').click(function(){
-        $('.edu_1 li').removeClass('on');
-        $(this).addClass('on');
+        // $('.edu_1 li').removeClass('on');
+        $(this).toggleClass('on');
     })
 }
