@@ -27,13 +27,25 @@ const reviewSlide = () => {
     var swiper = new Swiper(".reviewSwiper", {
         loop:true,
         spaceBetween: 10,
-        slidesPerView: 3,
+        slidesPerView: 5,
         centeredSlides: true,
-        speed: 3000,
-        // autoplay: {
-        // delay: 0,
-        // disableOnInteraction: false
-        // }
+        speed: 4000,
+        loopedSlides: 5,
+        allowTouchMove: false,
+        autoplay: {
+        delay: 0,
+        disableOnInteraction: false
+        },
+        breakpoints: {
+            1250: {
+                slidesPerView: 3,
+                centeredSlides: true,
+            },
+            500: {
+                slidesPerView: 2,
+                centeredSlides: true,
+            },
+        },
     });
 }
 const videoSlide = () => {
@@ -43,29 +55,34 @@ const videoSlide = () => {
         slidesPerView: 3.3,
         centeredSlides: true,
         speed: 3000,
-        autoplay: {
-        delay: 0,
-        disableOnInteraction: false
-        }
+        // autoplay: {
+        // delay: 0,
+        // disableOnInteraction: false
+        // },
+        allowTouchMove: false,
     });
+    const swiperEl = document.querySelector(".videoSwiper");
+    swiperEl.addEventListener("mouseenter", () => swiper.autoplay.stop());
+    swiperEl.addEventListener("mouseleave", () => swiper.autoplay.start());
+    
 }
 // sec5
 const spaceSlide = () => {
     var swiper = new Swiper(".spaceSwiper", {
         loop:true,
-        spaceBetween: 10,
-        slidesPerView: 1,
+        // spaceBetween: 10,
+        // slidesPerView: 'auto',
         centeredSlides: true,
-        speed: 1000,
-        autoplay: {
-        delay: 500,
-        disableOnInteraction: false
-        },
+        speed: 2000,
+        // autoplay: {
+        // delay: 0,
+        // disableOnInteraction: false
+        // },
         navigation: {
         nextEl: ".sec5_next",
         prevEl: ".sec5_prev",
         },
-        loopedSlides: 3
+        loopedSlides: 3,
     });
 }
 
