@@ -69,7 +69,7 @@ section.sec4 .sec4_video_slide.on { animation: fadeIn 0.5s ease-in-out 0s 1 forw
 section.sec5 .s_titleBox { opacity: 0; }
 section.sec5 .s_titleBox.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
 section.sec5 .sec5_slide { opacity: 0; }
-section.sec5 .sec5_slide.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.sec5 .sec5_slide.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
 
 section.sec6 .s_titleBox { opacity: 0; }
 section.sec6 .s_titleBox.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }

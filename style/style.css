@@ -407,7 +407,7 @@ footer .box2 .copyright { font-size: 14px; font-weight: 400; color: #A7A7A7; }
 /* float_menu */
 .float_menu { position: fixed; bottom: 100px; right: 80px; z-index: 99; }
 .float_menu .box { }
-.float_menu ul { position: fixed; right: 80px; bottom: 190px; overflow: hidden; padding: 20px 10px; background: var(--white-color); border-radius: 100px; display: flex; align-items: center; justify-content: center; flex-direction: column;  display: flex; flex-direction: column; align-items: center; gap: 15px; padding-bottom: 30px; transition: max-height .5s , padding .5s, bottom .5s; max-height: 400px; }
+.float_menu ul { position: fixed; right: 80px; bottom: 190px; overflow: hidden; padding: 20px 10px; background: var(--white-color); border-radius: 100px; display: flex; align-items: center; justify-content: center; flex-direction: column;  display: flex; flex-direction: column; align-items: center; gap: 15px; padding-bottom: 30px; transition: max-height .3s , padding .3s, bottom .3s; max-height: 400px; }
 .float_menu.hide ul{ padding: 0 10px; max-height: 0px; bottom: 190px; }
 .float_menu ul li {  }
 .float_menu ul li.stick { max-width: 62px; width: 100%; height: 1px; background: #d9d9d9; display: block; }
@@ -420,7 +420,7 @@ footer .box2 .copyright { font-size: 14px; font-weight: 400; color: #A7A7A7; }
 /* .float_menu.hide .box{ height: 82px; } */
 .float_menu .box.on { width: 80px; height: 80px; }
 .float_menu .btnBox img{ transition: transform .5s; }
-.float_menu.hide .btnBox img{ transform: rotate(135deg); }
+.float_menu.hide .btnBox img{ transform: rotate(-135deg); }
 
 @media screen and (max-width: 1250px) {
     .float_menu .btnBox {  right: 35px; width: 60px; height: 60px;  }

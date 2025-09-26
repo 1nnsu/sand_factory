@@ -94,9 +94,9 @@ const spaceSlide = () => {
         // spaceBetween: 10,
         // slidesPerView: 'auto',
         centeredSlides: true,
-        speed: 2000,
+        speed: 500,
         autoplay: {
-        delay: 0,
+        delay: 2000,
         disableOnInteraction: false
         },
         navigation: {
