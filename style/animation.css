@@ -18,3 +18,70 @@
     0% { opacity: 0; transform: translate3d(-30px, 0, 0px); }
     100% { opacity: 1; transform: translate3d(0px, 0px, 0px); }
 }
+
+section.sec1 .t1 { opacity: 0; }
+section.sec1 .t1.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.sec2 .banner1 .t1 { opacity: 0; }
+section.sec2 .banner1.on .t1 { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.sec2 .banner1 .t2 { opacity: 0; }
+section.sec2 .banner1.on .t2 { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
+
+section.sec2 .about .about_logo { opacity: 0; }
+section.sec2 .about.on .about_logo { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.sec2 .about .s_titleBox { opacity: 0; }
+section.sec2 .about.on .s_titleBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
+
+section.sec2 .banner2 .t1 span { opacity: 0; }
+section.sec2 .banner2.on .t1 span { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.sec2 .about .sec2_slide { opacity: 0; }
+section.sec2 .about .sec2_slide.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s;  }
+
+section.sec3 .s_titleBox { opacity: 0; }
+section.sec3 .s_titleBox.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
+
+section.sec3 .inner .sec3_img { opacity: 0; }
+section.sec3 .inner .sec3_img.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.sec3 .point_div .point_title { opacity: 0; }
+section.sec3 .point_div.on .point_title { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.sec3 .point_div .point_ul li:nth-child(1) { opacity: 0; }
+section.sec3 .point_div .point_ul.on li:nth-child(1) { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.1s; }
+section.sec3 .point_div .point_ul li:nth-child(2) { opacity: 0; }
+section.sec3 .point_div .point_ul.on li:nth-child(2) { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
+section.sec3 .point_div .point_ul li:nth-child(3) { opacity: 0; }
+section.sec3 .point_div .point_ul.on li:nth-child(3) { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.3s; }
+section.sec3 .point_div .point_ul li:nth-child(4) { opacity: 0; }
+section.sec3 .point_div .point_ul.on li:nth-child(4) { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.4s; }
+section.sec3 .point_div .point_ul li:nth-child(5) { opacity: 0; }
+section.sec3 .point_div .point_ul.on li:nth-child(5) { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.5s; }
+
+section.sec4 .s_titleBox { opacity: 0; }
+section.sec4 .s_titleBox.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.sec4 .sec4_slide { opacity: 0; }
+section.sec4 .sec4_slide.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s;}
+
+section.sec4 .sec4_video_slide { opacity: 0; }
+section.sec4 .sec4_video_slide.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.sec5 .s_titleBox { opacity: 0; }
+section.sec5 .s_titleBox.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.sec5 .sec5_slide { opacity: 0; }
+section.sec5 .sec5_slide.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.sec6 .s_titleBox { opacity: 0; }
+section.sec6 .s_titleBox.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.sec6 .con .mapBox { opacity: 0; }
+section.sec6 .con.on .mapBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.1s; }
+section.sec6 .con .formBox { opacity: 0; }
+section.sec6 .con.on .formBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
+
+section.sec7 .inner img { opacity: 0; }
+section.sec7 .inner.on img { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.sec7 .inner .stick { opacity: 0; }
+section.sec7 .inner.on .stick { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.1s; }
+section.sec7 .inner b div{ opacity: 0; }
+section.sec7 .inner.on b div { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }

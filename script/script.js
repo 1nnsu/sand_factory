@@ -16,10 +16,19 @@ const aboutSlide = () => {
         slidesPerView: 6,
         centeredSlides: true,
         speed: 3000,
+        allowTouchMove: false,
         autoplay: {
         delay: 0,
-    },
-        waitForTransition: false, // 클릭 후에도 즉시 이어서 이동
+        disableOnInteraction: false,
+        },
+        breakpoints: {
+            1250: {
+                slidesPerView: 3,
+            },
+            650: {
+                slidesPerView: 2,
+            },
+        },
     });
 }
 // sec4
@@ -52,18 +61,30 @@ const videoSlide = () => {
     var swiper = new Swiper(".videoSwiper", {
         loop:true,
         spaceBetween: 30,
-        slidesPerView: 3.3,
+        slidesPerView: 3.5,
         centeredSlides: true,
-        speed: 3000,
-        // autoplay: {
-        // delay: 0,
-        // disableOnInteraction: false
-        // },
+        speed: 4000,
+        autoplay: {
+        delay: 0,
+        disableOnInteraction: false
+        },
         allowTouchMove: false,
+        breakpoints: {
+            1250: {
+                slidesPerView: 2.5,
+                centeredSlides: true,
+            },
+            650: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+                centeredSlides: true,
+            },
+            500: {
+                slidesPerView: 1,
+                centeredSlides: true,
+            },
+        },
     });
-    const swiperEl = document.querySelector(".videoSwiper");
-    swiperEl.addEventListener("mouseenter", () => swiper.autoplay.stop());
-    swiperEl.addEventListener("mouseleave", () => swiper.autoplay.start());
     
 }
 // sec5
@@ -74,10 +95,10 @@ const spaceSlide = () => {
         // slidesPerView: 'auto',
         centeredSlides: true,
         speed: 2000,
-        // autoplay: {
-        // delay: 0,
-        // disableOnInteraction: false
-        // },
+        autoplay: {
+        delay: 0,
+        disableOnInteraction: false
+        },
         navigation: {
         nextEl: ".sec5_next",
         prevEl: ".sec5_prev",
